@@ -1,27 +1,43 @@
-# Backend de la Aplicacion de Estudiantes de Ingenieria
+## About
 
-## Descripcion
+This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
 
-Backend para la Aplicacion de Estudiantes de Ingenieria.
 
-La aplicacion fue realizada con [NodeJS](https://nodejs.org/) y el framework [ExpressJS](https://expressjs.com/)
+## Available Scripts
 
-## Instalacion
+### `npm run dev`
 
-```bash
-$ npm install
-```
+Run the server in development mode.
 
-## Iniciar la app
+### `npm test`
 
-```bash
-$ DEBUG=app-estudiantes-backend:* npm start
-```
+Run all unit-tests with hot-reloading.
 
-## Soporte
+### `npm test -- --testFile="name of test file" (i.e. --testFile=Users).`
 
-La aplicacion para el backend fue desarrollada y es mantenida por los estudiantes de la Carrera de Ingenieria en Ciencias y Sistemas del CUNOC y el Comite de Ingenieria en Ciencias y Sistemas (CICS)
+Run a single unit-test.
 
-## Licencia
+### `npm run test:no-reloading`
 
-La aplicacion del servidor de la Aplicacion para Estudiantes de Ingenieria esta bajo la [Licencia MIT](LICENSE).
+Run all unit-tests without hot-reloading.
+
+### `npm run lint`
+
+Check for linting errors.
+
+### `npm run build`
+
+Build the project for production.
+
+### `npm start`
+
+Run the production build (Must be built first).
+
+### `npm start -- --env="name of env file" (default is production).`
+
+Run production build with a different env file.
+
+
+## Additional Notes
+
+- If `npm run dev` gives you issues with bcrypt on MacOS you may need to run: `npm rebuild bcrypt --build-from-source`. 
